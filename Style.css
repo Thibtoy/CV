@@ -1,5 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
+
 body {
-  width: 100%;
-  margin: 0;
-  padding: 50px 15% 30px 15%;
+	margin: 0px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 70% 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: ". g ."
+}
+
+h1 {
+    font-family: Coiny;
+    font-size: 70px;
+    color: white;
+    margin: 0;
+}
+
+h2 {
+	font-family: 'Libre Barcode 128 Text', cursive;
+	font-size: 40px;
+	text-align: center;
+}
+.grid {
+	grid-area: g;
+	display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px auto auto auto;
+    grid-template-areas: "head head head head head p p headeu headeu headeu headeu headeu"
+ 					  "t t t t t t t t t t t t"
+ 					  "x x x x x x s s s s s s"
+ 					  "c c c c c c c c c c c c"
+}
+
+.head1 {
+    grid-area: head;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#404040;
+}
+
+.photo {
+   grid-area: p;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #404040;
+}
+
+#moi {
+	transform: rotate(-90deg);
+	width: 190px;
+	height: 110px;
+	border-radius: 50%;
+	border: 3px dotted #76B69A;
+
+}
+
+.head2 {
+    grid-area: headeu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #404040;
+}
+
+.titre {
+	grid-area:t;
+
+}
+
+.xp {
+	grid-area: x;
+}
+
+.skill {
+	grid-area: s;
+}
+
+.contact {
+	grid-area: c;
 }
