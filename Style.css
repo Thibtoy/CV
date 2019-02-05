@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Coiny');
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
-@import url('https://fonts.googleapis.com/css?family=Bangers');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
 
 ::-webkit-scrollbar {
 	width: 2px;
@@ -18,7 +18,7 @@
 	background: black;
 }
 * {
-	font-family: Bangers;
+	font-family: 'Major Mono Display', monospace;
 	font-size: 23px;
 	text-align: center;
 	color: #1a5159/*#6086c1*/;
@@ -32,7 +32,7 @@ body {
 	grid-template-columns: 1fr 70% 1fr;
 	grid-template-rows: auto;
 	grid-template-areas: ". g .";
-	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnGdnWO7YN3viCZqjXkhy-jDtIOmTBNz8X1rwHwPdCDLzBFpv_Og);
+	/*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnGdnWO7YN3viCZqjXkhy-jDtIOmTBNz8X1rwHwPdCDLzBFpv_Og);*/
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -74,10 +74,11 @@ a {
  					"t t t t t t t t t t t t"
  					"x x x x x x s s s s s s"
  					"c c c c c c c c c c c c";
-	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/98/55/fb/9855fbe5dcdb69eb9aa9fe7aa703eedf.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-radius: 50px;
+	/*background-image: url(https://s-media-cache-ak0.pinimg.com/originals/98/55/fb/9855fbe5dcdb69eb9aa9fe7aa703eedf.jpg);*/
+	background-color: rgba(165, 116, 116, 0.20);
+	/*background-repeat: no-repeat;
+	background-size: cover;*/
+	border-radius: 50px 50px 0 0;
 }
 
 .head1 {
@@ -86,7 +87,7 @@ a {
     justify-content: center;
     align-items: center;
     background-color:#404040;
-		border-radius: 50px 0 0 0;
+	border-radius: 50px 0 0 0;
 }
 
 .photo {
@@ -112,7 +113,7 @@ a {
     justify-content: center;
     align-items: center;
     background-color: #404040;
-		border-radius: 0 50px 0 0;
+	border-radius: 0 50px 0 0;
 }
 
 .titre {
@@ -123,7 +124,7 @@ a {
 .xp {
 	grid-area: x;
 	width: 70%;
-	height: 450px;
+	height: 690px;
 	margin: 0 15%;
 	display: flex;
 	flex-direction: column;
